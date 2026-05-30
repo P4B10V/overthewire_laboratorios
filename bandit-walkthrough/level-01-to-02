@@ -1,0 +1,37 @@
+Level Goal
+
+The password for the next level is stored in a file called - located in the home directory
+
+Comandos sugeridos: ls , cd , cat , file , du , find
+
+Parece simple de hacer, pero aquí se aprenden bastantes cosas, después de realizar la conexion por ssh al usuario bandit1 listaremos el contenido del directorio para comprobar el archivo.
+
+Aquí el problema es el siguiente, si intentamos hacer un cat - la terminal se queda a la espera, es decir, no sabe que hacer.
+
+Si estamos en el directorio donde supuestamente está el archivo - porqué no está funcionando?
+
+Utilizaremos los comandos sugeridos:
+
+file -  -> no funciona
+
+bandit1@bandit:~$ du -
+4	
+
+bandit1@bandit:~$ find /home/bandit1 -
+/home/bandit1
+/home/bandit1/.bash_logout
+/home/bandit1/-
+/home/bandit1/.bashrc
+/home/bandit1/.profile
+-
+
+Y aqui es donde nos damos cuenta, de las rutas absolutas y relativas, quizas funcione con la ruta absoluta?
+
+Correcto, funciono con cat /home/bandit1/-
+
+También sería correcto utilizar cat ./- 
+
+
+NOTA: Las credenciales no serán escritas, aunque esto sea un juego está centrado en los pasos y errores que hice durante su solución.
+
+
