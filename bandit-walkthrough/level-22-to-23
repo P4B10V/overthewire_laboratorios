@@ -1,0 +1,32 @@
+Level Goal
+A program is running automatically at regular intervals from cron, the time-based job scheduler. Look in /etc/cron.d/ for the configuration and see what command is being executed.
+
+NOTE: Looking at shell scripts written by other people is a very useful skill. The script for this level is intentionally made easy to read. If you are having problems understanding what it does, try executing it to see the debug information it prints.
+
+Commands you may need to solve this level
+cron, crontab, crontab(5) (use “man 5 crontab” to access this)
+
+Para la resolución de este nivel tendremos que estudiar el siguiente script:
+
+#!/bin/bash
+
+myname=$(whoami)
+mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+
+echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
+
+cat /etc/bandit_pass/$myname > /tmp/$mytarget
+
+
+Si nos damos cuenta, podemos ver que hay dos ubicaciones que tiene la contraseña, una es: /etc/bandit_pass/bandit23 y la otra /tmp/$mytarget. 
+Al intentar la primera, nos dará permiso denegado, por lo que tendremos que comprobar si podemos en /tmp 
+
+¿Hay alguna manera de descubrir el nombre? Si leemos otra vez el script, podemos ver que $mytarget es el nombre del archivo, y se genera en ese script, por lo que si ejecutamos:
+
+echo I am user $myname | md5sum | cut -d ' ' -f 1 ya tendriamos la ruta 
+
+Si a partir de aqui estas bloqueado, preguntate quien es $myname 
+
+
+si ya te diste cuenta, esta es la solucion:
+cat /tmp/$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)
