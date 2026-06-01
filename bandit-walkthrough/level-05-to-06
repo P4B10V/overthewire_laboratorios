@@ -1,0 +1,19 @@
+Level Goal
+The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
+
+human-readable
+1033 bytes in size
+not executable
+Commands you may need to solve this level
+ls , cd , cat , file , du , find
+
+
+Con buscar en el directorio por el tamaño de 1033 bytes ya no hizo falta utilizar nada mas.
+
+find . -size 1033c 
+
+NOTA: mejorarlo para ser mas especificos
+
+
+
+
