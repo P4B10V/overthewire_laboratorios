@@ -1,8 +1,9 @@
-Level Goal
+**Enlace**
 
-The password for the next level is stored in a file called - located in the home directory
+[Nivel 01 -> 02]
 
-Comandos sugeridos: ls , cd , cat , file , du , find
+**Descripción**
+
 
 Parece simple de hacer, pero aquí se aprenden bastantes cosas, después de realizar la conexion por ssh al usuario bandit1 listaremos el contenido del directorio para comprobar el archivo.
 
