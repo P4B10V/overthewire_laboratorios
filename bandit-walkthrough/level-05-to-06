@@ -1,19 +1,19 @@
-Level Goal
-The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
+**Nivel 5 -> 6**
 
-human-readable
-1033 bytes in size
-not executable
-Commands you may need to solve this level
-ls , cd , cat , file , du , find
+[Enunciado original](https://overthewire.org/wargames/bandit/bandit6.html)
 
+**Descripción**
 
-Con buscar en el directorio por el tamaño de 1033 bytes ya no hizo falta utilizar nada mas.
+La contraseña esta almacenada en un fichero en algún sitio en el directorio `inhere`. Nos dicen que es `human-readable`, `1033 bytes` y `not executable`
 
-find . -size 1033c 
+**Solución**
 
-NOTA: mejorarlo para ser mas especificos
+Parecido al ejercicio anterior, sólo que esta vez nos dan mas información del fichero aunque hay mas cantidad de carpetas, por lo que quizas tendremos que ser mas especificos a la hora de ejecutar nuestros comandos.
 
 
 
+*Comandos utilizados*
 
+`ssh`, `cat`, `ls`, `find`, `file`
+
+*Las credenciales y soluciones no serán escritas, aunque esto sea un juego está centrado en los pasos y errores que hice durante su solución.*
