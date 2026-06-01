@@ -11,8 +11,8 @@ La contraseña esta almacenada en algún lugar del servidor y tiene las siguient
 Otra vez, deberemos utilizar el comando `find` pero en este punto ya sabremos utilizarlo mejor además de haber leído su manual. 
 
 Aquí tuve que utilizar dos conceptos:
-  - Utilizar `/dev/null` para limpiar la salida.
-  - `/` y su significado, a estas alturas deberíamos saberlo, pero nunca se sabe. 
+  - Utilizar `/dev/null` para reedirigir errores.
+  - La raíz del sistema es `/` y que significa buscar usándolo.
 
 Sabemos que tenemos que utilizar `find` y sus propiedades. Para filtrarlas por dueño y grupo, se encuentran en su manual (al igual que su tamaño como hicimos anteriormente). Una vez llegamos a este punto la salida será un tanto fea pues nos encontraremos con demasiada información, por eso tras realizar intentos con `grep` decidí probar con `/dev/null`
 
