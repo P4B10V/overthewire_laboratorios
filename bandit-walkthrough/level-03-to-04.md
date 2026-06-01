@@ -8,7 +8,7 @@ Obtener la contraseña de un fichero oculto en el directorio `inhere`
 
 **Solución**
 
-Sin mucho que decir, recordar que los archivos ocultos empiezan con `.`. Si no aparece nada, investigar con `man ls` que parámetros ofrece el comando.
+Sin mucho que decir, recordar que los archivos ocultos empiezan con `.` , como pista investigar con `man ls` que parámetros ofrece el comando.
 
 *Comandos utilizados*
 
