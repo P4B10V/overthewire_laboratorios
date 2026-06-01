@@ -1,0 +1,21 @@
+Level Goal
+The password for the next level is stored in a file called --spaces in this filename-- located in the home directory
+
+Commands you may need to solve this level
+ls , cd , cat , file , du , find
+
+Helpful Reading Material
+Google Search for “spaces in filename” 
+
+
+Este nivel es como el anterior sólo que tiene como problema añadido los espacios. Al intentar escribir su nombre la máquina no va a saber apuntar por lo que también tendremos que tener en cuenta el significado de las rutas relativas/absolutas. Por ejemplo:
+
+Funciona:
+cat /home/bandit2/--spaces\ in\ this\ filename-- 
+
+Pero no:
+cat --spaces\ in\ this\ filename-- 
+
+Si quisieramos utilizar la ruta relativa, tendríamos que especificar ./ para que funcione:
+cat ./"--spaces in this filename--"
+cat ./--spaces\ in\ this\ filename-- 
