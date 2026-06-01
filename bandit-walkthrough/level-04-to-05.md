@@ -10,7 +10,7 @@ En el directorio `inhere` hay una lista de ficheros pero sólo uno es `human-rea
 
 Para ello, lo lógico sería descubrir que ficheros podemos leer. Nos sugieren tres comandos que quizas puedan ayudarnos: `file`, `du` y `find` por lo que haremos `man` de cada uno y ver que podemos hacer con ellos.
 
-Tras estudiar los comandos, `du` queda descargado pues significa `disk usage` y no tiene nada que ver con nuestro cometido. La respuesta entonces estaría en uno de los dos restantes.
+Tras estudiar los comandos, `du` queda descartado pues significa `disk usage` y no tiene nada que ver con nuestro cometido. La respuesta entonces estaría en uno de los dos restantes.
 
 Sin entrar en mucho detalle ni tampoco dar la solución, un comando **encuentra ficheros** y otro nos dice **qué tipo de fichero es** 
 
