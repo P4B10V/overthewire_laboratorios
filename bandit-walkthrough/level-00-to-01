@@ -1,24 +1,16 @@
 https://overthewire.org/wargames/bandit/bandit1.html
 
-Level Goal
+**Descripción**
+Para este nivel nos piden recuperar la contraseña que está escrita en un fichero llamado `readme`. Para resolverlo nos proporcionan las credenciales para realizar una conexión por ssh.
 
-The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game.
-
-
-Solucion 
-
-
+**Recordatorio**
 Para resolver el primer nivel es necesario haber leído el nivel 0, en el que nos proporcionan las credenciales para realizar la primera conexión https://overthewire.org/wargames/bandit/bandit0.html 
 
-
+**Solución**
 El objetivo es simple, realizar una conexión mediante ssh y leer un archivo llamado readme localizado en el directorio personal del usuario:
 
-ssh -p 2220 bandit0@bandit.labs.overthewire.org
+*Comandos utilizados*
 
-Introducimos la contraseña y una vez dentro, primero nos aseguramos que estamos en el directorio correcto con pwd y después ejecutamos un ls para listar el contenido del directorio. Si todo va bien, nos aparecera el dicho readme el cual leeremos utilizando la herramienta cat.
+`ssh`, `cat`
 
-Todo esto se podría simplificar añadiendo al final de nuestra conexion:
-
-ssh -p 2220 bandit0@bandit.labs.overthewire.org 'cat readme' 
-
-NOTA: Las credenciales no serán escritas, aunque esto sea un juego está centrado en los pasos y errores que hice durante su solución.
+*Las credenciales y soluciones no serán escritas, aunque esto sea un juego está centrado en los pasos y errores que hice durante su solución.*
