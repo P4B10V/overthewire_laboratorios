@@ -7,3 +7,7 @@ grep, sort, uniq, strings, base64, tr, tar, gzip, bzip2, xxd, mkdir, cp, mv, fil
 Helpful Reading Material
 Hex dump on Wikipedia
 
+
+Lo primero que fue necesario hacer fue un xxd -r del fichero. 
+
+Después con file podiamos averiguar si era .tar .gz .bzip2 o la extensión que fuera y descomprimirlo con la herramienta adecuada, al final llegamos a un fichero de texto que contiene la contraseña. 
