@@ -1,0 +1,13 @@
+Level Goal
+The password for the next level is stored somewhere on the server and has all of the following properties:
+
+owned by user bandit7
+owned by group bandit6
+33 bytes in size
+Commands you may need to solve this level
+ls , cd , cat , file , du , find , grep
+
+
+no estoy seguro pero despues de encontrarlo y utilizar du con el fichero me ponia que tenia 4.0k, no sé si con 33 bytes se encontrará: /var/lib/dpkg/info/bandit7.password
+
+find / -group bandit6 2> /dev/null | grep pass
