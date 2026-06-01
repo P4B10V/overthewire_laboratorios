@@ -1,4 +1,6 @@
-[Nivel 1 -> 2](https://overthewire.org/wargames/bandit/bandit2.html)
+**Nivel 1 -> 2**
+
+[Enunciado original](https://overthewire.org/wargames/bandit/bandit2.html)
 
 **Descripción**
 
