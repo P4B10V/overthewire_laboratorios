@@ -1,38 +1,22 @@
-**Enlace**
-
-[Nivel 01 -> 02]
+[Nivel 1 -> 2](https://overthewire.org/wargames/bandit/bandit2.html)
 
 **Descripción**
 
+Para este nivel, nos piden obtener el contenido de un fichero llamado `-` en la carpeta personal del usuario `bandit1`
 
-Parece simple de hacer, pero aquí se aprenden bastantes cosas, después de realizar la conexion por ssh al usuario bandit1 listaremos el contenido del directorio para comprobar el archivo.
+**Solución**
 
-Aquí el problema es el siguiente, si intentamos hacer un cat - la terminal se queda a la espera, es decir, no sabe que hacer.
+Antes de nada, realizar la conexión con el usuario mediante `ssh`. Como lo mas normal es estar ubicados ya en el directorio personal al realizar la conexión podríamos hacer un `ls` para listar en contenido de la carpeta, pero podriamos hacer `pwd` para comprobarlo.
 
-Si estamos en el directorio donde supuestamente está el archivo - porqué no está funcionando?
+Aunque sencillo leer un archivo, el problema está en que - es un caracter especial y además entran en juego dos puntos que son importantes en el entorno UNIX, las rutas absolutas y relativas. Con esto último que acabo de decir, ya di una pista bastante clara de porque hacer `cat -` no va a funcionar, sólo añadire que si tienes conocimiento de bash scripting, ¿has intentado ejecutar un archivo .sh sabiendo que está ahí, y el ordenador te contesta, el archivo no existe?
 
-Utilizaremos los comandos sugeridos:
+Pues el tema va por ahí, por último, decir que todas las carpetas en Linux tienen dos subcarpetas, . y .. 
 
-file -  -> no funciona
+*Comandos utilizados*
 
-bandit1@bandit:~$ du -
-4	
+`ssh`, `cat`, `ls`
 
-bandit1@bandit:~$ find /home/bandit1 -
-/home/bandit1
-/home/bandit1/.bash_logout
-/home/bandit1/-
-/home/bandit1/.bashrc
-/home/bandit1/.profile
--
+*Las credenciales y soluciones no serán escritas, aunque esto sea un juego está centrado en los pasos y errores que hice durante su solución.*
 
-Y aqui es donde nos damos cuenta, de las rutas absolutas y relativas, quizas funcione con la ruta absoluta?
-
-Correcto, funciono con cat /home/bandit1/-
-
-También sería correcto utilizar cat ./- 
-
-
-NOTA: Las credenciales no serán escritas, aunque esto sea un juego está centrado en los pasos y errores que hice durante su solución.
 
 
