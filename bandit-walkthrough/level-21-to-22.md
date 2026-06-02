@@ -8,6 +8,7 @@ Un programa está corriendo a intervalos regulares desde cron. Mira en `/etc/cro
 
 **Solución**
 
+No hay mucho que decir sobre este, investigar en que directorio trabaja cron `/etc/cron.d/` y a partir de ahi es seguir las rutas. 
 
 *Comandos sugeridos*
 `cron`, `crontab`, `crontab(5) (use “man 5 crontab” to access this)`
