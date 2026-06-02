@@ -1,14 +1,23 @@
-Level Goal
-The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL/TLS encryption.
+**Nivel 15 -> 16**
 
-Helpful note: Getting “DONE”, “RENEGOTIATING” or “KEYUPDATE”? Read the “CONNECTED COMMANDS” section in the manpage.
+[Enunciado original](https://overthewire.org/wargames/bandit/bandit16.html)
 
-Commands you may need to solve this level
-ssh, telnet, nc, ncat, socat, openssl, s_client, nmap, netstat, ss
+**Descripción**
 
-Helpful Reading Material
-Secure Socket Layer/Transport Layer Security on Wikipedia
-OpenSSL Cookbook - Testing with OpenSSL 
+La contraseña de este nivel se puede obtener entregándola a localhost por el puerto 30001 utilizando SSL/TLS.
+
+**Solución**
+
+Como ya hemos probado a utilizar e investigar sobre openssl en el nivel anterior, este debería de ser sencillo pues sabiendo que nos piden utilizar SSL/TLS tendremos que utilizar `openssl`. Realizamos una conexion a la direccion indicada en la descripción, introducimos la contraseña de bandit15 y ya deberíamos de obtener las credenciales del siguiente nivel.
+
+*Comandos sugeridos*
+
+`ssh`, `telnet`, `nc`, `ncat`, `socat`, `openssl`, `s_client`, `nmap`, `netstat`, `ss`
+
+*Contenido sugerido*
+
+`Secure Socket Layer/Transport Layer Security on Wikipedia`
+`OpenSSL Cookbook - Testing with OpenSSL`
 
 
-openssl s_client localhost:30001 
+*Las credenciales y soluciones no serán escritas, aunque esto sea un juego está centrado en los pasos y errores que hice durante su solución.*
