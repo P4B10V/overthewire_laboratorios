@@ -4,7 +4,7 @@
 
 **Descripción**
 
-La contraseña de este nivel se puede obtener entregándola a localhost por el puerto 3000.
+La contraseña de este nivel se puede obtener entregándola a localhost por el puerto 30000.
 
 **Solución**
 
