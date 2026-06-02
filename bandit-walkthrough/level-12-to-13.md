@@ -1,3 +1,5 @@
+**Nivel 12 -> 13**
+
 [Enunciado original](https://overthewire.org/wargames/bandit/bandit13.html)
 
 **Descripción**
@@ -27,3 +29,5 @@ En resumen, nuestro objetivo es revertir el hexdump de data.txt, analizar que ti
 `Hex dump on Wikipedia`
 
 *Las credenciales y soluciones no serán escritas, aunque esto sea un juego está centrado en los pasos y errores que hice durante su solución.*
+
+
