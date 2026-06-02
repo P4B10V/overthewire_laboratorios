@@ -26,6 +26,6 @@ Como pista final, será necesario utilizar algo que ya vimos en los niveles ante
 
 *Comandos utilizados*
 
-`ssh`, `cat`, `find`, `grep`
+`ssh`, `cat`, `uniq`, `sort`
 
 *Las credenciales y soluciones no serán escritas, aunque esto sea un juego está centrado en los pasos y errores que hice durante su solución.*
