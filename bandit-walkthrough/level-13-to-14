@@ -1,15 +1,23 @@
-Level Goal
-The password for the next level is stored in /etc/bandit_pass/bandit14 and can only be read by user bandit14. For this level, you don’t get the next password, but you get a private SSH key that can be used to log into the next level. Look at the commands that logged you into previous bandit levels, and find out how to use the key for this level.
-If you need help with this level: a hint file can be found in the home directory.
-Make sure to read the error messages as they are informative.
+**Nivel 13 -> 14**
 
-Commands you may need to solve this level
-ssh, scp, umask, chmod, cat, nc, install
+[Enunciado original](https://overthewire.org/wargames/bandit/bandit14.html)
 
-copiarse la llave en local para luego entrar con ella:
+**Descripción**
 
-scp -P 2220 bandit13@bandit.labs.overthewire.org:/home/bandit13/sshkey.private 
+Para este nivel no se necesita recuperar de algún archivo, si no que necesitamos conectarnos mediante la clave privada al usuario `bandit14`
 
-Al principio daba error e hizo falta cambiar los permisos de la clave con chmod 400 oara que solo el propietario pueda leerlo.
+**Solución**
 
-ssh -p 2220 bandit14@bandit.labs.overthewire.org -i .ssh/sshkey.private 
+La clave privada está disponible en el directorio de `bandit13` y si al intentamos usar nos va a dar un error. La razón es que tienen bloqueado la conexión a localhost, por lo que nos tendremos que buscar una manera de pasarnos la clave privada y conectarnos desde nuestra máquina física, para ello tendremos que investigar sobre `scp`. Es un herramienta muy útil pues nos permite la transferencia de datos de manera cifrada, y aunque cambia un poco lo que nos resultada útil será:
+  - `-i` -> para indicar la clave que usaremos
+  - `-P` -> indicar el puerto (sí, en mayúsculas, en ssh es en minúsculas)
+
+Si al realizar la conexión utilizando la clave trata de leer el error que te pone, yo sólo te dire que está relacionado con `chmod`
+
+
+*Comandos sugeridos*
+
+`ssh` `scp` `umask` `chmod` `cat` `nc` `install`
+
+
+*Las credenciales y soluciones no serán escritas, aunque esto sea un juego está centrado en los pasos y errores que hice durante su solución.*
