@@ -9,7 +9,6 @@ La shell de bandit26 no es /bin/bash, averigua cual es, como trabaja y como sali
 **Solución**
 
 
-
 **Comandos sugeridos**
 
 `ssh`, `cat`, `more`, `vi`, `ls`, `id`, `pwd`
