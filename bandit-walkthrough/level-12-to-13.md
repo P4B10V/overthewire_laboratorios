@@ -1,17 +1,3 @@
-
-grep, sort, uniq, strings, base64, tr, tar, gzip, bzip2, xxd, mkdir, cp, mv, file
-
-Helpful Reading Material
-Hex dump on Wikipedia
-
-
-Lo primero que fue necesario hacer fue un xxd -r del fichero. 
-
-Después con file podiamos averiguar si era .tar .gz .bzip2 o la extensión que fuera y descomprimirlo con la herramienta adecuada, al final llegamos a un fichero de texto que contiene la contraseña. 
-
-
-**Nivel 12 -> 13**
-
 [Enunciado original](https://overthewire.org/wargames/bandit/bandit13.html)
 
 **Descripción**
@@ -29,7 +15,7 @@ Hay archivos que pueden ser binarios, desconocidos o incluso maliciosos, y no qu
 
 Una vez entendido hexdump, pasamos al ejercicio. Lo primero de todo será hacer lo que nos aconsejan, hacer `mktemp -d` para crear un directorio temporal y copiar en él `data.txt` para asi trabajar cómodamente. 
 
-La pregunta es, ¿cómo revertimos ese hexdump del archivo? 
+En resumen, nuestro objetivo es revertir el hexdump de data.txt, analizar que tipo de archivo es y descomprimirlo, teniendo en cuenta que tiene que tener la extensión adecuada.
 
 
 *Comandos sugeridos*
