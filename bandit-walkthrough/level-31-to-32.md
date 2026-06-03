@@ -10,7 +10,20 @@ La contraseña es la misma que la del usuario **bandit31**.
 
 **Solución**
 
-Sin mucho más que decir en este punto, investigar y probar comandos. 
+Este nivel ya me gustó bastante más. Después de clonar el repositorio localmente e investigar encontré:
+
+```
++This time your task is to push a file to the remote repository.
++
++Details:
++    File name: key.txt
++    Content: 'May I come in?'
++    Branch: master
+```
+
+Así que mi suposición sería crear el archivo dentro del repositorio, llamarlo igual con el mismo contenido y subirlo al repositorio. 
+
+El objetivo es `subir al archivo al repositorio`, si este paso se hace correctamente se obtiene la contraseña del siguiente nivel.
 
 **Comandos sugeridos**
 
