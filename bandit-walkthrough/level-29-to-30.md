@@ -1,6 +1,6 @@
-**Nivel 30 → 31**
+**Nivel 29 → 30**
 
-[Enunciado original](https://overthewire.org/wargames/bandit/bandit29.html)
+[Enunciado original](https://overthewire.org/wargames/bandit/bandit30.html)
 
 **Descripción**
 
