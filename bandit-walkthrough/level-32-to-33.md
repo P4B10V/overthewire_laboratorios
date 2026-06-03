@@ -4,10 +4,11 @@
 
 **Descripción**
 
-Escapar de un shell
+El objetivo es escapar de una shell. 
 
 **Solución**
 
+Esta shell lo que hace es convertir todo lo que introduces en mayúscula. Lo tuve que buscar por internet porque no tenía ni idea por donde seguír, y me encontré con `$0`
 
 **Comandos sugeridos**
 
