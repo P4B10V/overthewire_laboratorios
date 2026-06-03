@@ -1,4 +1,4 @@
-**Nivel 28 -> 29**
+**Nivel 27 -> 28**
 
 [Enunciado original](https://overthewire.org/wargames/bandit/bandit25.html)
 
@@ -8,7 +8,9 @@ There is a git repository at ssh://bandit27-git@bandit.labs.overthewire.org/home
 
 **Solución**
 
+Si no lo tenemos deberemos instalar `git`. Si no sabemos usarlo o por donde empezar con escribir git en la terminal y ejecutarlo nos enseñaran parámetros y su descripción, con leer eso ya es suficiente para este nivel. 
 
+Lo único que se te puede atragantar un poco es cuando tratas de clonarlo, pues no me acordaba que tenía que ser por el puerto 2220, con añadir este dato ya podrías clonar el repositorio sin problema y obtener la contraseña.
 
 **Comandos sugeridos**
 
