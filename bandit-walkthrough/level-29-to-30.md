@@ -17,7 +17,7 @@ No presenta gran dificultad técnica; simplemente requiere paciencia, curiosidad
 
 **Comandos sugeridos**
 
-- `git`
+`git`
 
 **Contenido sugerido**
 
