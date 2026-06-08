@@ -19,7 +19,8 @@ Como mi primer pensamiento fue acceder a esta web mediante linea de comandos, ah
 
 <img width="598" height="120" alt="image" src="https://github.com/user-attachments/assets/f8dca511-a033-4cca-933e-213f95d91be4" />
 
-Por lo que tendremos que investigar en dónde está guardada la contraseña. 
+
+La pista es `en esta página`, es decir, la contraseña está en esa página pero no esta visible para una petición utilizando un navegador web. 
 
 
 
